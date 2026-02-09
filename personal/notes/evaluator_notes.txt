@@ -19,3 +19,7 @@ Conditions for successful recursion:
         - is there an exit condition?
     2. the problem you solve with recursion has to be smaller than the overall problem
         - is it getting smaller?
+
+The parser builds the AST
+The AST holds the order/precedence of the operations
+The evaluator just recursively executes the operations in the AST
