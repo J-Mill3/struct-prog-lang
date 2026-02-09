@@ -1,0 +1,21 @@
+Simple order
+1. identify operator
+2. decide on operands
+3. *evaluate operands
+4. execute the operator
+
+* sometimes you don't pre-evaluate something (like in an if)
+
+Improved order
+1. identify operator
+2. decide on operands
+3. evaluate initial operands
+4. execute the operator, evaluate lazy operands if need
+
+*Lazy evaluation
+
+Conditions for successful recursion:
+    1. a condition under which the answer is trivial and non-recursive (exit condition)
+        - is there an exit condition?
+    2. the problem you solve with recursion has to be smaller than the overall problem
+        - is it getting smaller?
