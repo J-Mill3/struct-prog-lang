@@ -23,3 +23,6 @@ Conditions for successful recursion:
 The parser builds the AST
 The AST holds the order/precedence of the operations
 The evaluator just recursively executes the operations in the AST
+
+*Parentheses don't get added to the AST. They are processed by the parser which changes
+ how the AST is constructed, but they aren't in the tree
