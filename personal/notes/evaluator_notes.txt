@@ -12,8 +12,6 @@ Improved order
 3. evaluate initial operands
 4. execute the operator, evaluate lazy operands if need
 
-*Lazy evaluation
-
 Conditions for successful recursion:
     1. a condition under which the answer is trivial and non-recursive (exit condition)
         - is there an exit condition?
@@ -26,3 +24,18 @@ The evaluator just recursively executes the operations in the AST
 
 *Parentheses don't get added to the AST. They are processed by the parser which changes
  how the AST is constructed, but they aren't in the tree
+
+
+=====FUNCTIONS =====
+
+Arguments are evaluated before we call the function by default, but:
+
+*Lazy evaluation - we dont evaluate the expression until we need it
+                   we just pass the AST down
+
+Syntactic sugar: we are going to give you a capability thats already in the language
+                 but its just nicer to type or easier to implement
+
+Binding - assigning the values of the arguments to the parameters in the local environment
+
+Arity - number of parameters matches number of arguments
