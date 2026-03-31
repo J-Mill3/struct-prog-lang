@@ -38,4 +38,10 @@ Syntactic sugar: we are going to give you a capability thats already in the lang
 
 Binding - assigning the values of the arguments to the parameters in the local environment
 
+Dynamic Binding - checking the parent environment every time you CALL the function
+
+Static Binding - checking and saving the parent environment when you DECLARE the function
+                 -doesn't freeze the values in the environment
+                 -just links/makes the function point to the parent environment
+
 Arity - number of parameters matches number of arguments
